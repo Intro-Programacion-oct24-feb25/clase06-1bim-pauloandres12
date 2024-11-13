@@ -18,6 +18,7 @@ public class Ejemplo02 {
         //      0123456
         // se comienza a contar desde 0
         char letra = pais.charAt(3);
+        // para extraer un solo caracter de una cadena
         System.out.printf("%s\n", letra);
         
     }

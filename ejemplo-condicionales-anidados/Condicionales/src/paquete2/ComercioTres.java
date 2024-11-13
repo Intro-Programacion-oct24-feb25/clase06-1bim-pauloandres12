@@ -58,12 +58,44 @@ public class ComercioTres {
                 + " por favor");
         porcentajeSeguro = entrada.nextDouble();
         
+        // opcion 1
+        // funciona porque si el valor esta dentro del rango nos muestra
+        // el mismo valor de porcentajeSeguro
         if (porcentajeSeguro<1 && porcentajeSeguro>15){
             porcentajeSeguro = 10;
         }else{
-            porcentajeSeguro = porcentajeSeguro;
+            porcentajeSeguro = porcentajeSeguro + 0;
         }
-        
+        // opcion 2
+        // funciona porque nos muestra el valor de porcentajeSeguro + 0
+        // por lo que nos muestra el mismo valor de porcentajeSeguro
+        /*   if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
+            porcentajeSeguro = porcentajeSeguro + 0;
+        } else {
+            porcentajeSeguro = 10;
+        }
+
+        // opción 3
+        // funciona pero hace falta declarar que los valores menores a 1 
+        // tambien deben ser asignados el valor de 10
+        if (porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+
+         // opción 4
+         // funciona porque si damos un valor fuera de rango, se haria verdadera
+         // por lo que tomaria el valor de 10
+        if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+
+        // opción 5
+        // no funciona, porque al usar el and, haria que los valores se hagan 
+        // falsos y no muestre el valor de 10
+        if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+        */
         // calcular la productividad
         productividad = numeroProductos * coeficiente;
         // condicional anidado
