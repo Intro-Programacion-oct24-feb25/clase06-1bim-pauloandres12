@@ -68,11 +68,9 @@ public class Ejemplo021 {
                 break;    
                               
         }
-
-        mesCadena = mesCadena.toUpperCase();
         
         System.out.printf("Usted ha nacido el %d de %s de %d", 
-                        diaNacimiento, mesCadena, yearNacimiento);
+                        diaNacimiento, mesCadena.toUpperCase(), yearNacimiento);
         
     }
 }
