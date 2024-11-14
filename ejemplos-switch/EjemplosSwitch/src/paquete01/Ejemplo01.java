@@ -41,7 +41,7 @@ public class Ejemplo01 {
             
             case "DOMINGO":
                 System.out.printf("%s, es el séptimo día "
-                        + "de la semana", cadena);
+                        + "de la semana\n", cadena);
                 break;
                 
             default:
